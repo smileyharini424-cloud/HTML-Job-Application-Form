@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Apply for your desired position.</p>
+    </header>
+
+    <hr>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Job Information</legend>
+
+            <label for="position">Position Applying For:</label>
+
+            <select id="position" name="position">
+                <option value="">-- Select Position --</option>
+                <option value="web-developer">Web Developer</option>
+                <option value="software-developer">Software Developer</option>
+                <option value="data-analyst">Data Analyst</option>
+                <option value="ui-designer">UI Designer</option>
+            </select>
+
+            <br><br>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience"
+                   name="experience" min="0" max="30">
+
+            <br><br>
+
+            <label for="joining">Available Joining Date:</label>
+            <input type="date" id="joining" name="joining">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="education">Highest Qualification:</label>
+
+            <select id="education" name="education">
+                <option value="">-- Select Qualification --</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="diploma">Diploma</option>
+                <option value="degree">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="java" name="skills" value="Java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="c" name="skills" value="C">
+            <label for="c">C</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Resume and Cover Letter</legend>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume">
+
+            <br><br>
+
+            <label for="coverletter">Cover Letter:</label>
+            <br>
+
+            <textarea id="coverletter"
+                      name="coverletter"
+                      rows="7"
+                      cols="50"
+                      placeholder="Write your cover letter here..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">
+            I confirm that the information provided is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Job Application Portal</p>
+    </footer>
+
+</body>
+</html>
